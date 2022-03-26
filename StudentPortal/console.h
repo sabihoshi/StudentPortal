@@ -192,3 +192,30 @@ inline std::string Prompt<std::string>(const std::string &prompt)
 {
     return Prompt<std::string>(prompt, XY());
 }
+
+template<typename T>
+T Prompt(const std::string &prompt, const COORD position, T min, T max)
+{
+    while (true)
+    {
+        SetupInput(prompt, position);
+        int input; std::cin >> input;
+        hasCin = true;
+
+        ResetColor();
+        if (!std::cin || input > max || input < min)
+        {
+            CinReset();
+            continue;
+        }
+
+        XY(position.X, position.Y + 1);
+        return input;
+    }
+}
+
+template<typename T>
+T Prompt(const std::string &prompt, T min, T max)
+{
+    return Prompt<T>(prompt, XY(), min, max);
+}

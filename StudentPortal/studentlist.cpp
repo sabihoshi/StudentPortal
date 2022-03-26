@@ -20,10 +20,10 @@ void StudentList::AddStudent()
 	auto first = Prompt<std::string>("Enter your first name");
 	auto last = Prompt<std::string>("Enter your last name");
 	auto id = Prompt<int>("Enter your student ID");
-	auto level = Prompt<int>("Enter your year level");
-	auto year = Prompt<int>("Enter the year you were born");
-	auto month = Prompt<int>("Enter the month your were born (1-12)");
-	auto day = Prompt<int>("Enter the day you were born");
+	auto level = Prompt<int>("Enter your year level", 1, 4);
+	auto year = Prompt<int>("Enter the year you were born", 1, 2023);
+	auto month = Prompt<int>("Enter the month your were born (1-12)", 1, 12);
+	auto day = Prompt<int>("Enter the day you were born", 1, 31);
 	auto address = Prompt<std::string>("Enter your Address");
 	auto gender = Prompt<std::string>("Enter your Gender");
 	auto degree = Prompt<std::string>("Enter your Degree");
