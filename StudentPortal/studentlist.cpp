@@ -43,13 +43,14 @@ void StudentList::SearchStudent()
 	PrintBorders({ 20, 3 }, "SEARCH STUDENT", 80, 20);
 
 	XY(53, 7);
-	WriteLine("1. Name");
-	WriteLine("2. Student ID");
-	WriteLine("3. Year Level");
-	WriteLine("4. Birthday");
-	WriteLine("5. Address");
-	WriteLine("6. Gender");
-	WriteLine("7. Degree");
+	Color yellow{ 232, 182, 30 };
+	WriteLine(ChangeColor("1", yellow) + ". Name");
+	WriteLine(ChangeColor("2", yellow) + ". Student ID");
+	WriteLine(ChangeColor("3", yellow) + ". Year Level");
+	WriteLine(ChangeColor("4", yellow) + ". Birthday");
+	WriteLine(ChangeColor("5", yellow) + ". Address");
+	WriteLine(ChangeColor("6", yellow) + ". Gender");
+	WriteLine(ChangeColor("7", yellow) + ". Degree");
 
 	std::vector<Student> filtered;
 Prompt:

@@ -255,6 +255,6 @@ void PrintBorders(const COORD position, const std::string title, const int width
 	PrintBorders({titleX, position.Y - 1}, titleWidth, 3);
 
 	XY(titleX, position.Y);
-	std::cout << "╣ " << ChangeColor(title, { 232, 182, 30 }) << " ╠";
+	std::cout << "╣ " << ChangeColor(title, {8, 191, 60}) << " ╠";
 	XY(position.X + 2, position.Y + 2);
 }
