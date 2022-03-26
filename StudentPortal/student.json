@@ -1,0 +1,34 @@
+[
+    {
+        "Address": "This is some address",
+        "Birthday": {
+            "Day": 1,
+            "Month": 12,
+            "Year": 2000
+        },
+        "Degree": "BSCSSE",
+        "Gender": "Female",
+        "Name": {
+            "First": "hime",
+            "Last": "sama"
+        },
+        "StudentId": 10000,
+        "YearLevel": 1
+    },
+    {
+        "Address": "Test address",
+        "Birthday": {
+            "Day": 3,
+            "Month": 11,
+            "Year": 1998
+        },
+        "Degree": "BSCSSE",
+        "Gender": "Female",
+        "Name": {
+            "First": "Test Person",
+            "Last": "Lol"
+        },
+        "StudentId": 201203,
+        "YearLevel": 2
+    }
+]
